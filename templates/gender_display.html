@@ -1,0 +1,20 @@
+
+{% extends 'layout1.html' %}
+
+{% block content %}
+<br>
+<html>
+  <head>
+
+  </head>
+  <body><p>
+    <h3>The accuracy of the medal is {{accuracy}}.</h3>
+	<h3>The prediction for gender of the player is {{predicted_val}}.</h3></p>
+	<h3>Scatter plot:</h3>
+  <img src="http://127.0.0.1:5000/{{fig_loc}}"/ height="800px" width="1200px">
+
+  </body>
+
+</html>
+
+{% endblock content %}

@@ -1,0 +1,21 @@
+{% extends 'layout1.html' %}
+
+{% block content %}
+<h1>{{the_title_of_page}}</h1>
+<form  method="post">
+<label for="country">Country 1:</label><span style="color: red !important; display: inline; float: none;">*</span>      
+        
+            <select id="country" name="country11" class="form-control">
+			{% for thing in country_listy %}
+                <option value="{{thing|safe}}">{{thing|safe}}</option>
+            {% endfor %}    
+            </select>
+
+			<button type="submit" value="Submit">Submit</button>
+</form>
+<p> </p>
+
+
+
+
+{% endblock content %}

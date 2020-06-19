@@ -1,0 +1,29 @@
+{% extends 'layout1.html' %}
+
+{% block content %}
+
+
+<br><br><br>
+
+
+<html>
+  <head>
+
+  </head>
+  <body>
+    <h1>TOP 10 PLAYERS FOR THE SPORT</h1>
+
+	
+  
+  
+
+{% for table in tables %}
+            {{titles[loop.index]}}
+            {{ table|safe }}
+{% endfor %}
+  </body>
+
+</html>
+
+
+{% endblock content %}

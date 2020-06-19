@@ -1,0 +1,27 @@
+{% extends 'layout1.html' %}
+
+{% block content %}
+
+
+<br><br><br>
+
+
+<html>
+  <head>
+
+  </head>
+  <body>
+    <h1>Top 10 countries all times</h1>
+
+	
+  <img src="http://localhost:5000/{{country_name_the_path_graph}}" height="800px" width="1200px">
+  
+
+{% for table in tables %}
+            {{titles[loop.index]}}
+            {{ table|safe }}
+{% endfor %}
+  </body>
+
+</html>
+{% endblock content %}

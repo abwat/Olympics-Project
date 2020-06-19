@@ -1,0 +1,25 @@
+{% extends 'layout1.html' %}
+
+{% block content %}
+
+
+<br><br>
+<html>
+  <head>
+
+  </head>
+  <body>
+    <h1>SPORT WISE </h1>
+
+{% for thing in the_listy%}
+<p class='text-muted'>
+
+          <ul class="list-group">
+  <a class="list-group-item list-group-item-light" href="/selectedsport/{{ thing|safe }}">{{ thing|safe }}</a>
+{% endfor %}  
+
+  </body>
+
+</html>
+
+{% endblock content %}

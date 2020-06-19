@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='main.css')}}">
+    <center><a href="http://www.olympics.org"><img src="/static/ol.png" height="130px" width="120px"></a></center>
+    <center><h6><i>'Citius, Altius, Fortius'</i></h6></center>
+  {% if title %}
+  <title>Olympic Project -{{title}}</title>
+  {% else %}
+  <title>Olympic Project </title>
+  {% endif %}
+</head>
+<body>
+<header class="site-header">
+  <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+    <div class="container">
+      <a class="navbar-brand mr-4" href="/">Olympic Project</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggle">
+        <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link" href="/">Home</a>
+          <a class="nav-item nav-link" href="/about">About</a>
+        </div>
+        
+        
+      </div>
+    </div>
+  </nav>
+</header>
+  <main role="main" class="container">
+    
+  <div class="row">
+    <div class="col-md-12">
+      {% block content %}{% endblock %}
+      <br><br><br>
+      
+    </div>
+
+</body>
+</html>

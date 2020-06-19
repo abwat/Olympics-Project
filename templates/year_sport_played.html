@@ -1,0 +1,30 @@
+{% extends 'layout1.html' %}
+
+{% block content %}
+
+
+<br><br><br>
+
+
+<html>
+  <head>
+
+  </head>
+  <body>
+    <h1>LIST OF YEAR FOR THE SPORT</h1>
+
+  
+  
+  
+
+<ol>
+{% for thing in the_listy%}
+  <a href="/selectedsport/top10_countries_year/{{sporty_name}}/{{ thing|safe }}"><li>{{ thing|safe }}</li></a>
+{% endfor %}  
+</ol>
+  </body>
+
+</html>
+
+
+{% endblock content %}

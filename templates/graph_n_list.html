@@ -1,0 +1,28 @@
+{% extends 'layout1.html' %}
+
+{% block content %}
+
+
+<br><br><br>
+
+<html>
+  <head>
+
+  </head>
+  <body>
+    <h2>LIST AND MEDAL COUNT</h2>
+
+  <img src="http://localhost:5000/{{graphy_path}}" height="800px" width="1200px">
+  
+  
+
+<ol>
+{% for thing in the_listy%}
+  <a href="/thepath/{{country_name}}/{{ thing|safe }}"><li>{{ thing|safe }}</li></a>
+{% endfor %}  
+</ol>
+  </body>
+
+</html>
+
+{% endblock content %}
